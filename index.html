@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYZ BANK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 id="wel">Welcome Customer!!!</h2>
+  <div id="instructions">
+    <h3>Follow the below steps to get Diwali Coupon:</h3>
+
+    <p>1. Enter your Customer ID in the textbox</p>
+    <p>2. Click on Validate Customer button</p>
+    <p>3. Click on Generate Coupon button</p>
+  </div>
+  <br>
+  <button onclick="hide()">Click herre to Register</button> <br><br>
+  <label>Enter Customer ID:</label>
+  <input type="text" id="custID">
+  <br><br>
+  <button onclick="validateCustomer()">Validate Customer</button>
+  <button onclick="generateCoupon()">Generate Coupon</button>
+  <!-- popup box(own method)-->
+   <div id="popup">
+    <p id="popMessage"></p>
+    <button onclick="closePopup()">OK</button>
+   </div>
+  <script src="index.js"></script>
+</body>
+</html>
